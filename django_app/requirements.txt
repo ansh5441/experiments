@@ -1,0 +1,11 @@
+django
+timezonefinder
+pillow
+mysqlclient
+virtualenv
+boto3
+django-storages
+requests
+django-ses
+sleekxmpp
+celery

@@ -1,0 +1,18 @@
+{
+  "name": "rxjsexp",
+  "version": "1.0.0",
+  "description": "experiments with rxjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "tst"
+  },
+  "keywords": [
+    "javascript",
+    "reactive"
+  ],
+  "author": "Anshuman",
+  "license": "ISC",
+  "dependencies": {
+    "@reactivex/rxjs": "^5.5.2"
+  }
+}

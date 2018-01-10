@@ -1,0 +1,10 @@
+[package]
+name = "web_appl"
+version = "0.1.0"
+authors = ["Anshuman <ansh5441@gmail.com>"]
+
+[dependencies]
+time="*"
+router = "*"
+[dependencies.iron]
+version="*"

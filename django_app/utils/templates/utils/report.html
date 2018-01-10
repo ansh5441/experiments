@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+  <!--integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+  {% load static from staticfiles %}
+  <link rel="stylesheet" href="{% static 'utils/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'utils/css/style.css' %}">
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>-->
+  <script src='{% static "utils/js/angular.min.js" %}'></script>
+  <script src='{% static "utils/js/script.js" %}'></script>
+
+</head>
+<body>
+<div ng-app="talks" ng-controller="app_ctrl" class="container">
+  <table class='table table-bordered table-striped'>
+
+    <tr>
+      <td>Registered today</td>
+      <td>{{ today_registered_users }}</td>
+    </tr>
+    <tr>
+      <td>Current active users (Location updated in last 15 minutes)</td>
+      <td>{{ current_active_users }}</td>
+    </tr>
+    <tr>
+      <td>Today's active users (Location updated today)</td>
+      <td>{{ today_active_users }}</td>
+    </tr>
+    <tr>
+      <td>Total users</td>
+      <td>{{ total_users }}</td>
+    </tr>
+    <tr>
+      <td>Hifis created today</td>
+      <td>{{ hifi_created }}</td>
+    </tr>
+    <tr>
+      <td>Hifis received today</td>
+      <td>{{ hifi_received }}</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

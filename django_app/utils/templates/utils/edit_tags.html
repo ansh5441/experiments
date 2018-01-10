@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit tags</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <!--integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'utils/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'utils/css/style.css' %}">
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>-->
+    <script src='{% static "utils/js/angular.min.js" %}'></script>
+    <script src='{% static "utils/js/script.js" %}'></script>
+
+</head>
+<body>
+<div ng-app="talks" ng-controller="app_ctrl" class="container">
+    <table class='table table-bordered table-striped'>
+        <tr>
+            <th>Image</th>
+            <th>Tags</th>
+            <th>Type</th>
+        </tr>
+        {% for t in tags %}
+        <tr>
+
+            <td><img width="200px" alt="{{t.pic}}" src="{{t.pic}}"></td>
+            <td><input type='text' value="{{t.tag}}"></td>
+            <td><input type='text' value="{{t.typ}}"></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

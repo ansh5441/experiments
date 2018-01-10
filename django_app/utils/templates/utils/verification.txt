@@ -1,0 +1,5 @@
+Hey {{ name }}, welcome to the Hifi Campus Ambassador program.
+
+Your referral code is {{ referral }}
+
+If you didn't register, just delete this email and everything will go back to the way it was.

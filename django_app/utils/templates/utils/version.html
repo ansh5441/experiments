@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Version Report</title>
+
+  {% load static from staticfiles %}
+  <link rel="stylesheet" href="{% static 'utils/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'utils/css/style.css' %}">
+
+  <script src='{% static "utils/js/angular.min.js" %}'></script>
+  <script src='{% static "utils/js/script.js" %}'></script>
+  <style>
+    hr {
+      color: #000;
+      background-color: #000;
+      height: 1px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<div ng-app="talks" ng-controller="app_ctrl" class="container">
+
+  <form method="POST" action="#">
+    Heading:<br>
+    <input type="text" name="heading" value="">
+    <br>
+    Message:<br>
+    <textarea type="text" name="message" value="" cols="40"></textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  {% for r in resp %}
+    <h1>{{ r.heading }}</h1>
+    {#    <p>{{ r.message }}</p>#}
+    <ul>
+      {% for l in r.message %}
+        <li>{{ l }}</li>
+      {% endfor %}
+    </ul>
+    <hr>
+  {% endfor %}
+</div>
+</body>
+</html>

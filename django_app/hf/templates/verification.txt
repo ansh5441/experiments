@@ -1,0 +1,11 @@
+Hello
+{{ username }}
+Welcome aboard Hifi!
+Before you go out and tie messages to
+places with Hifi, please verify your email
+address.
+Confirm Email
+If you did not create a Hifi account using
+this address, please contact us at
+Copyright &copy; 2016
+Storyboard Inc., USA

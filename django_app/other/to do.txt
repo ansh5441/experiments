@@ -1,0 +1,87 @@
+#TODO page for saving icons 100
+#TODO verify apis page
+#TODO icons for hifis
+#TODO refactoring
+#TODO make create hifi async
+#TODO Migrate to postgresql / nosql / realtimedb
+
+#TODO 1. check errors in log
+#TODO 2. speed up timezone queries by installing some stuff
+#TODO 3. enable location silent notification through celery
+#TODO 4. add password to logs and report
+#TODO 5. timezone issue in repeat hifis
+#TODO 6. write tests
+#TODO 7. don't send hifi as chat
+
+
+
+done
+67. Use notification helper for hifi received notification
+66. when I reach notifications
+65. picture not updating in chat server on updating profile
+64. jabber id not being created on create user
+63. figure out a way to send notification only when user is online
+62. on like, new hifi comes on top
+61. 4-10 change Hifi to hyde in all messages
+60. 4-10 silent notification of token mismatch to old device
+59. 4-10 add latitude between and longitude between in circle query
+58. 3-10 incorrect name in liked hifi message
+57. async in create hifi - type:silent_activity
+56. type:silent_token_mismatch
+55. update roster on updating name
+54. like notification
+53. update roster on updating contact
+52. Push if chatee user is offline
+51. When hifi is received, create a chat conversation between sender and receiver
+50. While adding as roster, update the nickname as their full name...
+49. When Hifi is received, the sender and receiver has to be added in their respective roster list and subscribed automatically
+48. Like apis - view hifi (who liked), home (like status), profile (who liked)
+47. silent push notification if app not running (ejabberd)
+46. 13-9 update user image in chat server on updating profile
+45. 13-9 send hifis as chat message
+44. silent notification on create hifi post
+43. 30-8 Add indexes to columns
+42. 30-8 save average user location update time
+41. 24-8 friends saved in both from and to
+40. fix activity "you left a hifi coming even after hifi is received"
+39. fix repeat hifis
+38. fix chat server ssl certificate
+37. add colors to interest hifis
+36. on updating digits_id check for duplicate
+35. update version on email verified
+34. check unique verified email in registration and update_email
+33. send notification to sender
+32. create interest hifi
+31. block status in home api
+30. block user only filters old posts
+29. check for duplicates in contact_sync
+28. check for numbers less than 9 digits
+27. logout user from other devices on login
+26. When I reach, when they reach
+25. compress images
+24. user joined = incorrect activity
+23. category image in interest api
+22. group by interest id in interest api
+21. create notifications based on interest data, not hifi, not more than once every 3 hours
+20. create hifi based on interest data
+19. increase limit to 500 in interest api
+18. verify user add email and if verified
+17. get user version add email and if verified
+16. interest image and tag in interest api
+15. list subscription api
+14. subscribe/unsubscribe api
+13. send check receivers' location while creating hifis
+12. create user status - active, background, terminated, logged out
+11. check if subscribe email is unique
+10. if location updated less than 5 secs ago, don't draw box
+9. migrate database
+8. Geo-spatial indexing
+7. limit activity api to 2 days
+6. created at in activity
+5. create fake posts
+4. add to create hifi
+    variable repeat 0 1
+    variable expiry datetime
+3. pagination
+2. activity page
+1. save friends

@@ -1,0 +1,21 @@
+[package]
+name = "rocket-app"
+version = "0.1.0"
+authors = ["Ashley Mannix <ashleymannix@live.com.au>"]
+publish = false
+
+[dependencies]
+rocket = "*"
+rocket_contrib = "*"
+rocket_codegen = "*"
+
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+uuid = { version = "*", features = ["serde", "v4"] }
+
+failure = "*"
+failure_derive = "*"
+
+auto_impl = "*"

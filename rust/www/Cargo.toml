@@ -1,0 +1,10 @@
+[package]
+name = "www"
+version = "0.1.0"
+authors = ["Anshuman <ansh5441@gmail.com>"]
+
+[dependencies]
+iron = "*"
+
+bson = "0.10.0"
+mongodb = "0.3.7"

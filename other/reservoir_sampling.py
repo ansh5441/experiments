@@ -2,7 +2,7 @@ import sys
 import random
  
 def get_reservoir_sample(N,arr):
-    sample = [];
+    sample = []
 
     for i,line in enumerate(arr):
         if i < N:

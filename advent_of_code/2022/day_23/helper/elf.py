@@ -20,8 +20,15 @@ class Elf:
   def get_proposal(self):
     return self.proposal
 
+  def move_to_proposed_position(self):
+    prop = self.get_proposal()
+    if prop is not None:
+      propx, propy = prop
+      self.set_pos(propx, propy)
+
   def __repr__(self) -> str:
-    return f"{self.get_pos()}"
+    # return f"{self.get_pos()}"
+    return "#"
 
   def to_string(self) -> str:
     return f"#: {self.get_pos()} -> {self.get_proposal()}"

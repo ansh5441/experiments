@@ -18,12 +18,13 @@ def solve(input_data):
   print(grid)
   for round in range(10):
     grid.move_elves()
+    print(grid)
     print("\n\n\n")
-  return grid.get_area_spanning_rectangle()
+  return grid.get_area_spanning_rectangle() - len(grid.grid)
 
 
 if __name__ == "__main__":
-  input_file = "advent_of_code/2022/day_23/input/input_small.txt"
+  input_file = "advent_of_code/2022/day_23/input/input.txt"
   with open(input_file) as f:
     input_data = [line.strip() for line in f.readlines()]
     sol = solve(input_data)
